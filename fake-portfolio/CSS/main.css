@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: #333; }
+
+ul {
+  list-style: none; }
+  
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
+#navbar {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  }
+#navbar ul {
+  display: flex; }
+#navbar li {
+  padding: 1rem 1.5rem; }
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s; }
+#navbar a:hover {
+  border-color: #ccc; }
+#navbar a.current {
+  border-color: #ffbc00; }
+
+#header-home {
+  background: url("../img/showcase4.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff; }
+#header-home .header-content {
+  text-align: center;
+  padding-top: 20%; }
+#header-home .header-content h1 {
+  font-size: 4.3rem; }
+
+#header-inner {
+  background: url("./img/showcase.jpg") no-repeat 20% 30%/cover #333;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 50px;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+#projects {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 22rem);
+  justify-content: center;
+  align-items: center;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.projectImg {
+  height: 17rem;
+  width: 20rem;
+  margin-bottom: 0px;
+}
+
+.projectTagline {
+  width: 20rem;
+  background-color: #300003;
+  padding: 7px 60px;
+  margin-top: 0px;
+}
+
+.btn-container {
+  width: 100vw;
+}
+.showAll {
+  margin-left: 45%;
+  margin-top: 40px;
+  font-size: 17px;
+  padding: 7px 60px;
+}
+#contact {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+   display: inline;
+   margin-right: 20px;
+   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.fab {
+  margin-right: 10px;
+}
+
+@media (max-width: 1100px) {
+  #header-home {
+    height: 35rem; }
+  #header-home .header-content {
+    padding-top: 5rem; }
+  .header-lead {
+    font-size: 41px !important;
+  }
+  #projects {
+    grid-template-columns: repeat(2, 19rem);
+  }
+  .projectImg {
+    height: 17rem;
+    width: 17rem;
+    margin-bottom: 0px;
+  }
+  .projectTagline {
+    width: 17rem; }
+  .showAll {
+    margin-left: 40%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center; }
+  #navbar li {
+    padding: 0.7rem; }
+  #header-home {
+    height: 89vh;
+    width: 100vw;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%; }
+  .header-content {
+    font-size: 17px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  #projects {
+    grid-template-columns: repeat(1, 22rem);
+  }
+  .projectImg {
+    height: 17rem;
+    width: 75vw;
+    margin-bottom: 0px;
+  }
+  .projectTagline {
+    width: 75vw;
+    padding: 2px auto;
+    margin-bottom: 20px;
+  }  
+  .showAll {
+    margin-left: 30%;
+  }
+  .social {
+    margin-right: 10px;
+  }
+ }
+
+@media (max-width: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; } 
+  }
+
+@media (max-width: 450px) {
+   .showAll {
+     margin-left: 26%;
+   }
+}
+
+@media screen and (max-width: 400px) {
+    .MA {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+ 
+@media (max-width: 330px) {
+  #header-home {
+    width: 100vw;
+    height: 100vh;
+  }
+  #header-home .header-content h1 {
+    font-size: 2rem; } 
+  .projectTagline {
+    width: 60vw;
+  }
+  }
+  
