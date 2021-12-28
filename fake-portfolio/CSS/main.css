@@ -102,6 +102,8 @@ ul {
 .projectTagline {
   width: 20rem;
   background-color: #300003;
+  color: white;
+  font-weight: 700;
   padding: 7px 60px;
   margin-top: 0px;
 }
